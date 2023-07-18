@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <aside class="">
+            <header>
+                <h2>Animation speed (milliseconds)</h2>
+                <i class="fa-solid fa-xmark close"></i>
+            </header>
+            <form id="speed-animation-form">
+                <div class="label">
+                    Node Speed Animation
+                    <div class="node-speed">
+                        <input type="number" id="node-speed">
+                        <i class="fa-solid fa-check tick" id="node-speed-button"></i>
+                    </div>
+                </div>
+                <div class="label">
+                    Arrow Speed Animation
+                    <div class="arrow-speed">
+                        <input type="number" id="arrow-speed">
+                        <i class="fa-solid fa-check tick" id="arrow-speed-button"></i>
+                    </div>
+                </div>
+            </form>
+            <p class="warning-aside"></p>
+            <p class="saved"></p>
+        </aside>
+        <nav>
+            <i class="fa-solid fa-bars burguer-menu"></i>
+            <h1>Linked List Animation</h1> 
+            <i class="fa-solid fa-circle-half-stroke dark-light-mode"></i>
+        </nav>
+        <div class="linked-list">
+        </div>
+    </main>
+    <p id="warning"></p>
+    <form class="linked-list-buttons">
+        <div class="set">
+            <input type="button" value="Set" id="bSet">
+            <input type="text" placeholder="Index" id="inputSetIndex">
+            <input type="text" placeholder="Data" id="inputSetData">
+        </div>
+        <div class="insert">
+            <input type="button" value="Insert" id="bInsert">
+            <input type="text" placeholder="Index" id="inputInsertIndex">
+            <input type="text" placeholder="Data" id="inputInsertData">
+        </div>
+        <div class="add">
+            <input type="button" value="Add" id="bAdd">
+            <input type="text" placeholder="Data" id="inputAddData">
+        </div>
+        <div class="remove">
+            <div class="remove-button-div">
+                <input type="button" value="Remove" id="bRemove">
+                <div class="change">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+            <ul class="choose" style="display: none;">
+                <li>Index</li>
+                <li>Data</li>
+            </ul>
+            <input type="text" placeholder="Index" id="inputRemoveIndex" style="display: none;">
+            <input type="text" placeholder="Data" id="inputRemoveData" style="display: none;">
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/eventsListener.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/remove.js"></script>
+</body>
+</html>
